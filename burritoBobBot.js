@@ -1,8 +1,9 @@
 'use strict';
 
-var Slackbots = require('slackbots');
-var UserModel = require('./lib/User.js');
-var Utils = require('./lib/Utilities');
+const Slackbots = require('slackbots');
+const UserModel = require('./lib/User.js');
+const Utils = require('./lib/Utilities');
+const express = require('express');
 
 
 /* Variables */
@@ -12,6 +13,12 @@ var orders = [];
 var options = ['vegetarian', 'ham', 'bacon', 'sausage', 'chorizo'];
 var users = [];
 var user = null;
+
+/* Configure Express */
+
+const app = express();
+
+app.listen(process.env.PORT || 3000, () => console.log('App is running'));
 
 const bot = new Slackbots({
     token: process.env.BOT_API_KEY,
