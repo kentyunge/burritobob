@@ -11,7 +11,7 @@ var orderStartedBy = null;
 var orders = [];
 var options = ['vegetarian', 'ham', 'bacon', 'sausage', 'chorizo'];
 var users = [];
-
+var user = null;
 
 const bot = new Slackbots({
     token: process.env.BOT_API_KEY,
