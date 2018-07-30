@@ -7,19 +7,15 @@
     "bot",
     "jokes"
   ],
-  "main": "lib/burritobob.js",
-  "bin": {
-    "burritoBobBot": "bin/bot.js"
-  },
+  "main": "burritoBobBot.js",
   "scripts": {
-    "start": "node bin/bot.js"
+    "start": "node burritoBobBot.js"
   },
   "author": {
     "name": "Kent Yunge"
   },
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.4.0",
     "slackbots": "^1.1.0"
   }
 }
